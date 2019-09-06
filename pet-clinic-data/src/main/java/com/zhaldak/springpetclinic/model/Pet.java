@@ -1,5 +1,6 @@
 package com.zhaldak.springpetclinic.model;
 
+
 import java.time.LocalDate;
 
 public class Pet {
