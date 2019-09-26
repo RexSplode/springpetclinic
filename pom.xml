@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.zhaldak</groupId>
     <artifactId>springpetclinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>springpetclinic</name>
     <description>Demo project for Spring Boot</description>
 
@@ -46,7 +46,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/RexSplode/springpetclinic.git</developerConnection>
-      <tag>tryout</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
