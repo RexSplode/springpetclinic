@@ -1,22 +1,19 @@
 package com.zhaldak.springpetclinic.model;
 
-public class Person {
-    private static String firstName;
-    private static String lastName;
+import lombok.*;
 
-    public static String getFirstName() {
-        return firstName;
-    }
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 
-    public static void setFirstName(String firstName) {
-        Person.firstName = firstName;
-    }
+@Setter
+@Getter
+@MappedSuperclass
+public class Person extends BaseEntity {
+    @Column(name = "first_name")
+    private String firstName;
 
-    public static String getLastName() {
-        return lastName;
-    }
+    @Column(name = "last_name")
+    private String lastName;
 
-    public static void setLastName(String lastName) {
-        Person.lastName = lastName;
-    }
+
 }
