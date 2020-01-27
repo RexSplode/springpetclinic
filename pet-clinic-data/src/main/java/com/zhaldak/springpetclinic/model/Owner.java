@@ -11,11 +11,14 @@ import java.util.Set;
 
 @Setter
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
 @Builder
+@AllArgsConstructor
 @Entity(name = "owners")
 public class Owner extends Person {
+
+    public Owner() {
+        super();
+    }
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<Pet> pets = new HashSet<>();

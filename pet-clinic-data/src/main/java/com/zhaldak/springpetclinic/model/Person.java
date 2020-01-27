@@ -8,6 +8,8 @@ import javax.persistence.MappedSuperclass;
 @Setter
 @Getter
 @MappedSuperclass
+@AllArgsConstructor
+@NoArgsConstructor
 public class Person extends BaseEntity {
     @Column(name = "first_name")
     private String firstName;
